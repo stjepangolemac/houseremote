@@ -1,0 +1,9 @@
+
+> houseremote@1.0.0 start /home/stjepan/Documents/houseremote
+> node server.js
+
+Sat, 28 May 2016 00:04:44 GMT encryption secret loaded successfully key: b16920894899c7780b5fc7161560a412
+Sat, 28 May 2016 00:04:44 GMT scheduler scheduling
+Sat, 28 May 2016 00:04:44 GMT server listening on port 3000
+Sat, 28 May 2016 00:04:45 GMT scheduler scheduling
+Sat, 28 May 2016 00:04:46 GMT scheduler scheduling
