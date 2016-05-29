@@ -8,19 +8,44 @@ var db = undefined;
 
 function scheduling() {
   debug('scheduling');
-  /*var _db = fs.readFileSync('./db.json');
-  db = JSON.parse(_db);
 
-  if(time.now >= timer.starttime && timer.active == false) timer.active = true
-  if(time.now >= timer.endtime && timer.active == true) timer.active = false
-*/
+  var backupdb = JSON.stringify(db);
+  fs.writeFileSync('./scheduler/db.data', backupdb, { encoding: 'utf8'});
+
   if(!quit) setTimeout(scheduling, frequency)
 }
 
 function startScheduler() {
+  var jsondb = fs.readFileSync('./scheduler/db.data', 'utf8');
+  db = JSON.parse(jsondb);
+  debug(JSON.stringify(db));
+
   scheduling();
 }
+
 function stopScheduler() {
   quit = true;
 }
+
+function addTimer(timer) {
+
+}
+
+function removeTimer(timer) {
+
+}
+
+function toggleEnabled(timer) {
+
+}
+
+function listTimers() {
+
+}
+
+function triggerDevice(device) {
+
+}
+
+
 module.exports = { startScheduler }

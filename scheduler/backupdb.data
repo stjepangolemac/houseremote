@@ -1,0 +1,22 @@
+[{
+	"name": "kap po kap",
+	"device": "ventil1",
+	"startTime": "(18) * 60 * 60 + (0) * 60",
+	"endTime": "(18) * 60 * 60 + (30) * 60",
+	"active": "false",
+	"enabled": "true"
+}, {
+	"name": "prskalice ledina",
+	"device": "ventil2",
+	"startTime": "(20) * 60 * 60 + (0) * 60",
+	"endTime": "(20) * 60 * 60 + (20) * 60",
+	"active": "false",
+	"enabled": "true"
+}, {
+	"name": "bazen svjetlo",
+	"device": "prekidac1",
+	"startTime": "(21) * 60 * 60 + (0) * 60",
+	"endTime": "(6) * 60 * 60 + (0) * 60",
+	"active": "false",
+	"enabled": "true"
+}]
