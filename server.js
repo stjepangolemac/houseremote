@@ -1,29 +1,56 @@
 'use strict'
 const debug = require('debug')('server');
 const express = require('express');
-var Base64 = require('js-base64').Base64;
+const bodyParser = require('body-parser');
 
 var app = express();
 const PORT = 3000;
 
 var aes = require('./security/aes.js');
-aes.loadSecret();
 var scheduler = require('./scheduler/scheduler.js');
-scheduler.startScheduler();
 
-// INCOMING COMMAND
+// Use body parser
+app.use(bodyParser.text());
+app.use(bodyParser.json());       // to support JSON-encoded bodies
+app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
+  extended: true
+}));
+
+// Incoming message
+app.post('/', function (req ,res) {
+  debug('POST:' + ' ip:' + req.ip + ' msg:' + req.body);
+
+  var ciphermsg = req.body;
+  var ciphermsg = ciphermsg.substring(0, ciphermsg.length-1);
+
+  var plainmsg = aes.decrypt(ciphermsg);
+  debug('Received msg: ' + ciphermsg.length);
+
+
+  if(plainmsg[0]) {
+    debug('Decrypted: ' + plainmsg[1]);
+    res.send(aes.encrypt('ok'));
+  }
+  else res.send(aes.encrypt(plainmsg[1]));
+});
+
+// Incoming message
 app.get('/', function (req, res) {
-  if(req.get('command') == (undefined || null || '')) {
+  if(req.get('command') == (undefined || null || '')) { // NO COMMAND
     debug('GET:' + ' ip:' + req.ip + ' head:no');
     res.send(aes.encrypt('No command in header!'));
   }
-  else {
+  else { // Valid command
     var deciphercommand = aes.decrypt(req.get('command'));
-    debug('method:GET' + ' ip:' + req.ip + ' command:' + deciphercommand);
-    res.send(aes.encrypt('Ok'));
+
+    debug('method:GET' + ' ip:' + req.ip + ' command:' + deciphercommand[1]);
+    if(deciphercommand[0]) res.send(aes.encrypt('Ok'))
+    else res.send(aes.encrypt(deciphercommand[1]));
   }
 });
 
+aes.loadSecret();
+scheduler.startScheduler();
 app.listen(PORT || 3000, function () {
   debug('listening on port 3000');
 });

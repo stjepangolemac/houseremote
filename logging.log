@@ -2,8 +2,74 @@
 > houseremote@1.0.0 start /home/stjepan/Documents/houseremote
 > node server.js
 
-Sat, 28 May 2016 00:04:44 GMT encryption secret loaded successfully key: b16920894899c7780b5fc7161560a412
-Sat, 28 May 2016 00:04:44 GMT scheduler scheduling
-Sat, 28 May 2016 00:04:44 GMT server listening on port 3000
-Sat, 28 May 2016 00:04:45 GMT scheduler scheduling
-Sat, 28 May 2016 00:04:46 GMT scheduler scheduling
+Sun, 29 May 2016 17:50:57 GMT encryption secret loaded successfully
+Sun, 29 May 2016 17:50:57 GMT scheduler scheduling
+Sun, 29 May 2016 17:50:57 GMT server listening on port 3000
+Sun, 29 May 2016 17:50:58 GMT scheduler scheduling
+Sun, 29 May 2016 17:50:59 GMT scheduler scheduling
+Sun, 29 May 2016 17:51:00 GMT scheduler scheduling
+Sun, 29 May 2016 17:51:01 GMT scheduler scheduling
+Sun, 29 May 2016 17:51:02 GMT scheduler scheduling
+Sun, 29 May 2016 17:51:03 GMT scheduler scheduling
+Sun, 29 May 2016 17:51:04 GMT server POST: ip:::ffff:192.168.0.26 msg:6baf413be942ea71S2wzFqPSZiqG5h54i9zTpg==
+
+Sun, 29 May 2016 17:51:04 GMT encryption iv: 166baf413be942ea71 rest: 24S2wzFqPSZiqG5h54i9zTpg==
+Sun, 29 May 2016 17:51:04 GMT encryption Decrypt successfull
+Sun, 29 May 2016 17:51:04 GMT server Received msg: 40
+Sun, 29 May 2016 17:51:04 GMT server Decrypted: stipe
+Sun, 29 May 2016 17:51:04 GMT scheduler scheduling
+Sun, 29 May 2016 17:51:05 GMT scheduler scheduling
+Sun, 29 May 2016 17:51:06 GMT scheduler scheduling
+Sun, 29 May 2016 17:51:07 GMT scheduler scheduling
+Sun, 29 May 2016 17:51:08 GMT scheduler scheduling
+Sun, 29 May 2016 17:51:09 GMT scheduler scheduling
+Sun, 29 May 2016 17:51:10 GMT scheduler scheduling
+Sun, 29 May 2016 17:51:11 GMT scheduler scheduling
+Sun, 29 May 2016 17:51:12 GMT scheduler scheduling
+Sun, 29 May 2016 17:51:13 GMT scheduler scheduling
+Sun, 29 May 2016 17:51:14 GMT scheduler scheduling
+Sun, 29 May 2016 17:51:15 GMT scheduler scheduling
+Sun, 29 May 2016 17:51:16 GMT scheduler scheduling
+Sun, 29 May 2016 17:51:17 GMT scheduler scheduling
+Sun, 29 May 2016 17:51:18 GMT scheduler scheduling
+Sun, 29 May 2016 17:51:19 GMT scheduler scheduling
+Sun, 29 May 2016 17:51:20 GMT scheduler scheduling
+Sun, 29 May 2016 17:51:21 GMT scheduler scheduling
+Sun, 29 May 2016 17:51:22 GMT scheduler scheduling
+Sun, 29 May 2016 17:51:23 GMT scheduler scheduling
+Sun, 29 May 2016 17:51:24 GMT scheduler scheduling
+Sun, 29 May 2016 17:51:25 GMT scheduler scheduling
+Sun, 29 May 2016 17:51:26 GMT scheduler scheduling
+Sun, 29 May 2016 17:51:27 GMT scheduler scheduling
+Sun, 29 May 2016 17:51:28 GMT scheduler scheduling
+Sun, 29 May 2016 17:51:29 GMT scheduler scheduling
+Sun, 29 May 2016 17:51:30 GMT scheduler scheduling
+Sun, 29 May 2016 17:51:31 GMT scheduler scheduling
+Sun, 29 May 2016 17:51:32 GMT scheduler scheduling
+Sun, 29 May 2016 17:51:33 GMT scheduler scheduling
+Sun, 29 May 2016 17:51:34 GMT scheduler scheduling
+Sun, 29 May 2016 17:51:35 GMT scheduler scheduling
+Sun, 29 May 2016 17:51:36 GMT scheduler scheduling
+Sun, 29 May 2016 17:51:37 GMT scheduler scheduling
+Sun, 29 May 2016 17:51:38 GMT scheduler scheduling
+Sun, 29 May 2016 17:51:39 GMT scheduler scheduling
+Sun, 29 May 2016 17:51:40 GMT scheduler scheduling
+Sun, 29 May 2016 17:51:41 GMT scheduler scheduling
+Sun, 29 May 2016 17:51:42 GMT scheduler scheduling
+Sun, 29 May 2016 17:51:43 GMT scheduler scheduling
+Sun, 29 May 2016 17:51:44 GMT scheduler scheduling
+Sun, 29 May 2016 17:51:45 GMT scheduler scheduling
+Sun, 29 May 2016 17:51:46 GMT scheduler scheduling
+Sun, 29 May 2016 17:51:47 GMT scheduler scheduling
+Sun, 29 May 2016 17:51:48 GMT scheduler scheduling
+Sun, 29 May 2016 17:51:49 GMT scheduler scheduling
+Sun, 29 May 2016 17:51:50 GMT scheduler scheduling
+Sun, 29 May 2016 17:51:51 GMT scheduler scheduling
+Sun, 29 May 2016 17:51:52 GMT scheduler scheduling
+Sun, 29 May 2016 17:51:53 GMT scheduler scheduling
+Sun, 29 May 2016 17:51:54 GMT scheduler scheduling
+Sun, 29 May 2016 17:51:55 GMT scheduler scheduling
+Sun, 29 May 2016 17:51:56 GMT scheduler scheduling
+Sun, 29 May 2016 17:51:57 GMT scheduler scheduling
+Sun, 29 May 2016 17:51:58 GMT scheduler scheduling
+Sun, 29 May 2016 17:51:59 GMT scheduler scheduling
