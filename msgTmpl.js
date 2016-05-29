@@ -11,5 +11,5 @@ var msg = {
     enabled : 'true';
   },
   device: 'garaza1',      // for trigger, can be undefined
-  counter: '125323';      // anti replay attack
+  counter: 125323;      // anti replay attack
 }
