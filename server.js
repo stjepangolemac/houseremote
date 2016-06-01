@@ -52,5 +52,17 @@ app.get('/', function (req, res) {
 aes.loadSecret();
 scheduler.startScheduler();
 app.listen(PORT || 3000, function () {
-  debug('listening on port 3000');
+  debug('started listening on port ' + PORT);
 });
+
+var exampleTimer = {
+  name: 'lalasdasdsa',
+  device: '123asdasd',
+  startTime: 49020, // 13:37 in seconds from midnight
+  endTime: 50400, // 14:00 in seconds from midnight
+  active: false,
+  enabled: false
+}
+
+
+debug(scheduler.addTimer(exampleTimer));
