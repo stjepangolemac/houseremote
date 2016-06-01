@@ -34,35 +34,22 @@ app.post('/', function (req ,res) {
   else res.send(aes.encrypt(plainmsg[1]));
 });
 
-// Incoming message
-app.get('/', function (req, res) {
-  if(req.get('command') == (undefined || null || '')) { // NO COMMAND
-    debug('GET:' + ' ip:' + req.ip + ' head:no');
-    res.send(aes.encrypt('No command in header!'));
-  }
-  else { // Valid command
-    var deciphercommand = aes.decrypt(req.get('command'));
-
-    debug('method:GET' + ' ip:' + req.ip + ' command:' + deciphercommand[1]);
-    if(deciphercommand[0]) res.send(aes.encrypt('Ok'))
-    else res.send(aes.encrypt(deciphercommand[1]));
-  }
-});
-
 aes.loadSecret();
 scheduler.startScheduler();
 app.listen(PORT || 3000, function () {
   debug('started listening on port ' + PORT);
 });
 
-var exampleTimer = {
-  name: 'lalasdasdsa',
-  device: '123asdasd',
-  startTime: 49020, // 13:37 in seconds from midnight
-  endTime: 50400, // 14:00 in seconds from midnight
-  active: false,
-  enabled: false
+
+for (var i = 0; i < 1000; i++) {
+  var d = new Date();
+  var exampleTimer = {
+    name: 'glodji' + i,
+    device: '123asdasd',
+    startTime: d.getHours() * 60 * 60 + d.getMinutes() * 60 + d.getSeconds() + 5,
+    endTime: d.getHours() * 60 * 60 + d.getMinutes() * 60 + d.getSeconds() + 10,
+    active: false,
+    enabled: true
+  }
+  debug(scheduler.addTimer(exampleTimer));
 }
-
-
-debug(scheduler.addTimer(exampleTimer));

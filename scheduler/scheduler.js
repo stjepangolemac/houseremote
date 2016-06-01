@@ -1,19 +1,60 @@
 'use strict'
 const debug = require('debug')('scheduler');
 const fs = require('fs');
+var SerialPort = require("serialport");
 
 var frequency = 1000;
 var quit = false;
 var db = undefined;
-
 var currentSeconds = undefined;
+
+// configuring serial port
+var port = new SerialPort.SerialPort('/dev/ttyS3', { // promijeniti path
+  baudRate: 9600,
+  parser: SerialPort.parsers.readline('\n')
+});
+
+port.on('open', function() {
+  debug('serial port ready');
+});
+
+port.on('error', function(err) {
+  debug('error opening serial port: ' + err.message);
+})
+
+port.on('data', function (data) {
+  // 0,timer.name,activated
+  // 1,trigger,triggered
+  var input = data;
+  port.pause();
+
+  //logika za provjeru
+  backupDB();
+  port.flush();
+  port.resume();
+});
 
 function scheduling() {
   var time = new Date();
   currentSeconds = time.getHours() * 60 * 60 + time.getMinutes() * 60 + time.getSeconds();
-  debug(currentSeconds);
 
-  backupDB();
+  // controlling timer on/off
+  db.forEach(function (element, index, array) {
+    if(element.enabled) {
+      if( element.startTime < currentSeconds &&
+          element.endTime > currentSeconds &&
+          !element.active) {
+        activateTimer(element);
+        db[index].active = true;
+      }
+      if( (element.startTime > currentSeconds  && element.active) ||
+          (element.endTime < currentSeconds && element.active)) {
+        deactivateTimer(element);
+        db[index].active = false;
+      }
+    }
+  });
+
   if(!quit) setTimeout(scheduling, frequency)
 }
 
@@ -23,6 +64,7 @@ function startScheduler() {
 }
 
 function stopScheduler() {
+  backupDB();
   quit = true;
 }
 
@@ -49,11 +91,16 @@ function addTimer(timer) {
   if(timer.endTime > 86399 || timer.endTime < 0)
     return 'cannot add, timer property endTime is out of bounds';
 
-  if( Math.abs(timer.startTime - timer.endTime) < frequency)
+  if( Math.abs(timer.startTime - timer.endTime) < frequency/1000)
     return 'cannot add, timer properties startTime and endTime are too close';
+
+  db.forEach(function (element, index, array) {
+  if(element.name == timer.name) return 'cannot add, timer with such name already exists';
+  });
   // end of checks
 
   db.push(timer);
+  backupDB();
   return 'added new timer in database';
 }
 
@@ -63,7 +110,10 @@ function removeTimer(timer) {
   var index = db.indexOf(timer);
   if(index == -1) return 'cannot remove, timer is not in database';
 
-  if(db.splice(index, 1) != []) return 'removed timer from database';
+  if(db.splice(index, 1) != []) {
+    backupDB();
+    return 'removed timer from database';
+  }
   else return 'cannot remove';
 }
 
@@ -74,17 +124,28 @@ function toggleEnabled(timer) {
   if(index == -1) return 'cannot toggle, timer is not in database';
 
   db[index].enabled = !db[index].enabled;
+  backupDB();
   return 'timer is toggled';
 }
 
 function listTimers() {
   if(db == (null || undefined)) return 'cannot list, database nonexistent';
 
-  return db;
+  return JSON.stringify(db);
 }
 
 function triggerDevice(device) {
+  //port.write(2 + ',' + device);
+}
 
+function activateTimer(timer) {
+  //port.write(timer.name + ',' + timer.device + ',' + 1);
+  debug('activating timer ' + timer.name);
+}
+
+function deactivateTimer(timer) {
+  //port.write(timer.name + ',' +  timer.device + ',' + 0);
+  debug('deactivating timer ' + timer.name);
 }
 
 // database management

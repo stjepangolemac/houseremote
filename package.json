@@ -13,6 +13,7 @@
     "cryptlib": "^1.0.3",
     "debug": "^2.2.0",
     "express": "^4.13.4",
-    "js-base64": "^2.1.9"
+    "js-base64": "^2.1.9",
+    "serialport": "^3.1.2"
   }
 }
