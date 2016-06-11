@@ -9,7 +9,7 @@ var db = undefined;
 var currentSeconds = undefined;
 
 // configuring serial port
-var port = new SerialPort.SerialPort('/dev/ttyS3', { // promijeniti path
+var port = new SerialPort.SerialPort('/dev/ttyS9', { // promijeniti path
   baudRate: 9600,
   parser: SerialPort.parsers.readline('\n')
 });
@@ -35,7 +35,8 @@ port.on('data', function (data) {
 });
 
 function scheduling() {
-  var time = new Date();
+  debug('Scheduling...');
+var time = new Date();
   currentSeconds = time.getHours() * 60 * 60 + time.getMinutes() * 60 + time.getSeconds();
 
   // controlling timer on/off
