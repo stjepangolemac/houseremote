@@ -192,4 +192,6 @@ function loadDB() {
 }
 
 
-module.exports = { startScheduler, stopScheduler, addTimer }
+module.exports = { startScheduler: startScheduler,
+                    stopScheduler: stopScheduler,
+                    addTimer: addTimer }

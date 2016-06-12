@@ -1,4 +1,4 @@
-'use strict'
+  'use strict'
 
 var msg = {
   command: 'add',  // can be add, remove, list, trigger, enable/disable
