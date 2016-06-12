@@ -4,7 +4,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 
 var aes = require('../security/aes.js');
-var scheduler = require('./scheduler/scheduler.js');
+var scheduler = require('../scheduler/scheduler.js');
 var tmplcheck = require('../security/tmplcheck.js');
 
 var receive = function (req, res, next) {
