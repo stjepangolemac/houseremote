@@ -32,7 +32,7 @@ var receive = function (req, res, next) {
 
                 if (response[0]) {
                     debug('command valid: ' + response[1]);
-                    res.send(aes.encrypt('ok'));
+                    res.send(aes.encrypt(response[1]));
                 }
                 else {
                     debug('command invalid: ' + response[1]);
