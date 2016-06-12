@@ -11,7 +11,7 @@ var receive = function (req, res, next) {
     debug('received from ip: ' + req.ip + ', msg length: ' + req.body.length);
 
     var ciphermsg = req.body;
-    if(ciphermsg.length == (0 || undefined || null)) res.send(aes.encrypt('invalid'));
+    if(ciphermsg.length == (0 || undefined || null)) res.send('invalid');
     else {
         ciphermsg = ciphermsg.substring(0, ciphermsg.length - 1);
 

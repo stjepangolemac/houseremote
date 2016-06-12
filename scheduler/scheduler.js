@@ -35,7 +35,7 @@ port.on('data', function (data) {
 });
 
 function scheduling() {
-    debug('Scheduling...');
+    debug('scheduling...');
     var time = new Date();
     currentSeconds = time.getHours() * 60 * 60 + time.getMinutes() * 60 + time.getSeconds();
 
