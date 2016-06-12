@@ -33,7 +33,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="msgController.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="msgController.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/middleware/msgController.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="205">
@@ -73,11 +73,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tmplcheck.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="tmplcheck.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/security/tmplcheck.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
-              <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+              <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -295,12 +295,12 @@
       <option name="presentableId" value="Default" />
       <updated>1465737780245</updated>
       <workItem from="1465737782500" duration="5710000" />
-      <workItem from="1465755722012" duration="6828000" />
+      <workItem from="1465755722012" duration="6898000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12538000" />
+    <option name="totallyTimeSpent" value="12608000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -446,18 +446,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/security/tmplcheck.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/middleware/msgController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="205">
           <caret line="22" column="49" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/security/tmplcheck.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
           <folding />
         </state>
       </provider>
