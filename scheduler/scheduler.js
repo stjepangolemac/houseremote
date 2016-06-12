@@ -116,7 +116,7 @@ function removeTimer(timer) {
     if (db.splice(index, 1) == []) {
         return [false, 'cannot remove timer'];
     }
-    backupDB();
+    //backupDB();
     return [true, 'timer removed from db'];
 }
 
