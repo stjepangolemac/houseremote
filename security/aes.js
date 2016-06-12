@@ -22,8 +22,7 @@ function encrypt(plaintext) {
 }
 
 function decrypt(ciphertext) {
-  var result = {0: false,
-                1: ''};
+  var result = [false, ''];
 
   if(!secretLoaded) {
     result[0] = false;

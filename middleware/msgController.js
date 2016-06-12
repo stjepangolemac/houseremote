@@ -8,7 +8,7 @@ var scheduler = require('../scheduler/scheduler.js');
 var tmplcheck = require('../security/tmplcheck.js');
 
 var receive = function (req, res, next) {
-    debug('received from ip: ' + req.ip + ', msg length: ' + req.body.length);
+    debug('received from ip: ' + req.ip + ', msg length: ' + req.body.length + ' msg: ' + req.body);
 
     if(req.body == undefined) res.send(aes.encrypt('invalid'));
     else {
