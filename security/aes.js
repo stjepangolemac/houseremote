@@ -38,11 +38,11 @@ function decrypt(ciphertext) {
   var iv = ciphertext.substring(0,16);
   var cipher = ciphertext.substring(16, ciphertext.length);
 
-  if((iv.length != 16) || ((cipher.length % 24) != 0)) {
+  /*if((iv.length != 16) || ((cipher.length % 24) != 0)) {
     result[0] = false;
     result[1] = 'Cannot decrypt, invalid message length2';
     return result;
-  }
+  }*/
 
   debug('iv: ' + iv.length + iv + ' rest: ' + cipher.length + cipher);
   debug('Decrypt successfull');
