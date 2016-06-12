@@ -7,6 +7,12 @@ var aes = require('../security/aes.js');
 var scheduler = require('../scheduler/scheduler.js');
 var tmplcheck = require('../security/tmplcheck.js');
 
+app.use(bodyParser.text());
+app.use(bodyParser.json());       // to support JSON-encoded bodies
+app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
+    extended: true
+}));
+
 var receive = function (req, res, next) {
     debug('received from ip: ' + req.ip + ', msg length: ' + req.body.length);
 
