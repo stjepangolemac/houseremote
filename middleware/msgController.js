@@ -24,11 +24,11 @@ var receive = function (req, res, next) {
             if (check[0]) {
                 // plainmsg[1] is OK
                 var response;
-                if (plainmsg[1].command == 'add') response = scheduler.addTimer(plainmsg[1].timer);
-                else if (plainmsg[1].command == 'remove') response = scheduler.removeTimer(plainmsg[1].timer);
-                else if (plainmsg[1].command == 'list') response = scheduler.listTimers();
-                else if (plainmsg[1].command == 'trigger') response = scheduler.triggerDevice(plainmsg[1].device);
-                else if (plainmsg[1].command == 'toggle') response = scheduler.toggleEnabled(plainmsg[1].timer);
+                if (parsedmsg.command == 'add') response = scheduler.addTimer(parsedmsg.timer);
+                else if (parsedmsg.command == 'remove') response = scheduler.removeTimer(parsedmsg.timer);
+                else if (parsedmsg.command == 'list') response = scheduler.listTimers();
+                else if (parsedmsg.command == 'trigger') response = scheduler.triggerDevice(parsedmsg.device);
+                else if (parsedmsg.command == 'toggle') response = scheduler.toggleEnabled(parsedmsg.timer);
 
                 if (response[0]) {
                     debug('command valid: ' + response[1]);
