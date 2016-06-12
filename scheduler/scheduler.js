@@ -120,7 +120,9 @@ function removeTimer(timer) {
 function toggleEnabled(timer) {
     if(db == (null || undefined)) return [false, 'cannot toggle, database nonexistent'];
 
-    var index = db.indexOf(timer);
+    var index = db.indexOf(db.find(function (item) {
+        return item.name === timer.name;
+    }));
     if(index == -1) return [false, 'cannot toggle, timer is not in database'];
 
     db[index].enabled = !db[index].enabled;
