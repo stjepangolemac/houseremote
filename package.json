@@ -4,7 +4,7 @@
   "description": "Remote management of sprinklers, garage doors and entry gates.",
   "main": "server.js",
   "scripts": {
-    "server": "DEBUG=server,encryption,scheduler npm start 2>&1 | tee logging.log"
+    "server": "DEBUG=server,encryption,scheduler,msgcontroller npm start 2>&1 | tee logging.log"
   },
   "author": "",
   "license": "ISC",
