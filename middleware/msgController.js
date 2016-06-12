@@ -18,7 +18,7 @@ var receive = function (req, res, next) {
         res.send(aes.encrypt('ok'));
     }
     else {
-        debug('bad decrypt');
+        debug('bad decrypt: ' + plainmsg[1]);
         res.send(aes.encrypt(plainmsg[1]));
     }
 };
