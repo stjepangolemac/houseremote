@@ -19,7 +19,8 @@ var receive = function (req, res, next) {
 
         if (plainmsg[0]) {
             debug('decrypted message: ' + plainmsg[1]);
-            var check = tmplcheck.check(JSON.parse(plainmsg[1]));
+            var parsedmsg = JSON.parse(plainmsg[1]);
+            var check = tmplcheck.check(parsedmsg);
             if (check[0]) {
                 // plainmsg[1] is OK
                 var response;

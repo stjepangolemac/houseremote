@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 const debug = require('debug')('encryption');
 const fs = require('fs');
 
@@ -8,7 +8,7 @@ var secretLoaded = false;
 
 function loadSecret() {
   var temp = fs.readFileSync('security/secret.txt');
-  var temp = temp.toString().substring(0,temp.length-1);
+  temp = temp.toString().substring(0,temp.length-1);
 
   key = cryptLib.getHashSha256(temp, 32);
   secretLoaded = true;
@@ -59,4 +59,4 @@ console.log(cip);
 console.log(decrypt(cip));
 */
 
-module.exports = { encrypt, decrypt, loadSecret }
+module.exports = { encrypt: encrypt, decrypt: decrypt, loadSecret: loadSecret }
