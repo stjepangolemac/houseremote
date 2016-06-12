@@ -106,19 +106,18 @@ function addTimer(timer) {
 }
 
 function removeTimer(timer) {
-    if(db == (null || undefined)) return [false, 'cannot remove, database nonexistent'];
+    if (db == (null || undefined)) return [false, 'cannot remove, database nonexistent'];
 
     var index = db.indexOf(db.find(function (item) {
         return item.name === timer.name;
     }));
-    if(index == -1) return [false, 'cannot remove, no such timer in db'];
+    if (index == -1) return [false, 'cannot remove, no such timer in db'];
 
-    if(db.splice(index, 1) != []) {
-        backupDB();
-        return [true, 'timer removed from db'];
+    if (db.splice(index, 1) == []) {
+        return [false, 'cannot remove timer'];
     }
-
-    else return [false, 'cannot remove timer'];
+    backupDB();
+    return [true, 'timer removed from db'];
 }
 
 function toggleEnabled(timer) {
