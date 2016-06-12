@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ebbaf98d-6c98-47e5-a65d-fcbcd04e6868" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/middleware/msgController.js" afterPath="$PROJECT_DIR$/middleware/msgController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scheduler/scheduler.js" afterPath="$PROJECT_DIR$/scheduler/scheduler.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/security/tmplcheck.js" afterPath="$PROJECT_DIR$/security/tmplcheck.js" />
     </list>
     <ignored path="houseremote.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -55,7 +53,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scheduler.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="scheduler.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scheduler/scheduler.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="256">
@@ -65,21 +63,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="msgTmpl.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/msgTmpl.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="71" selection-start-line="3" selection-start-column="71" selection-end-line="3" selection-end-column="71" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tmplcheck.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="tmplcheck.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/security/tmplcheck.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+            <state relative-caret-position="442">
+              <caret line="36" column="132" selection-start-line="36" selection-start-column="132" selection-end-line="36" selection-end-column="132" />
               <folding />
             </state>
           </provider>
@@ -98,9 +86,9 @@
         <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/msgTmpl.js" />
         <option value="$PROJECT_DIR$/security/aes.js" />
-        <option value="$PROJECT_DIR$/security/tmplcheck.js" />
         <option value="$PROJECT_DIR$/middleware/msgController.js" />
         <option value="$PROJECT_DIR$/scheduler/scheduler.js" />
+        <option value="$PROJECT_DIR$/security/tmplcheck.js" />
       </list>
     </option>
   </component>
@@ -239,12 +227,12 @@
       <updated>1465737780245</updated>
       <workItem from="1465737782500" duration="5710000" />
       <workItem from="1465755722012" duration="12051000" />
-      <workItem from="1465768141992" duration="29000" />
+      <workItem from="1465768141992" duration="174000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17790000" />
+    <option name="totallyTimeSpent" value="17935000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -421,22 +409,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/msgTmpl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="71" selection-start-line="3" selection-start-column="71" selection-end-line="3" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/security/tmplcheck.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/middleware/msgController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="714">
@@ -449,6 +421,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="256">
           <caret line="117" column="19" selection-start-line="117" selection-start-column="19" selection-end-line="117" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/msgTmpl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="71" selection-start-line="3" selection-start-column="71" selection-end-line="3" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/security/tmplcheck.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="36" column="132" selection-start-line="36" selection-start-column="132" selection-end-line="36" selection-end-column="132" />
           <folding />
         </state>
       </provider>
