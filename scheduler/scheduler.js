@@ -111,6 +111,7 @@ function removeTimer(timer) {
     var index = db.indexOf(db.find(function (item) {
         return item.name === timer.name;
     }));
+    debug('TIMER NAME: ' + timer.name);
     if(index == -1) return [false, 'cannot remove, no such timer in db'];
 
     if(db.splice(index, 1) != []) return [true, 'timer removed from db'];
