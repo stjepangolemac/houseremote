@@ -108,26 +108,13 @@ function addTimer(timer) {
 function removeTimer(timer) {
     if(db == (null || undefined)) return [false, 'cannot remove, database nonexistent'];
 
-    var index = db.indexOf(timer);
-    if(index == -1) {
-        // TODO ugasiti device od timera prije brisanja
-        timer.active = true;
+    var index = db.indexOf(db.find(function (item) {
+        return item.name === timer.name;
+    }));
+    if(index == -1) return [false, 'cannot remove, no such timer in db'];
 
-        index = db.indexOf(timer);
-        debug('OVDJE: ' + JSON.stringify(timer));
-        if(index == -1) return [false, 'cannot remove, timer is not in database'];
-
-        if(db.splice(index, 1) != []) {
-            backupDB();
-            return [true, 'removed timer from database'];
-        }
-    }
-
-    if(db.splice(index, 1) != []) {
-        backupDB();
-        return [true, 'removed timer from database'];
-    }
-    else return [false, 'cannot remove'];
+    if(db.splice(index, 1) != []) return [true, 'timer removed from db'];
+    else return [false, 'cannot remove timer'];
 }
 
 function toggleEnabled(timer) {
