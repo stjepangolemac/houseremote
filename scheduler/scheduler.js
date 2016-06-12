@@ -114,6 +114,7 @@ function removeTimer(timer) {
         timer.active = true;
 
         index = db.indexOf(timer);
+        debug('OVDJE: ' + JSON.stringify(timer));
         if(index == -1) return [false, 'cannot remove, timer is not in database'];
 
         if(db.splice(index, 1) != []) {
