@@ -10,9 +10,9 @@ var tmplcheck = require('../security/tmplcheck.js');
 var receive = function (req, res, next) {
     debug('received from ip: ' + req.ip + ', msg length: ' + req.body.length);
 
-    var ciphermsg = req.body;
-    if(ciphermsg.length == (0 || undefined || null)) res.send(aes.encrypt('invalid'));
+    if(req.body == undefined) res.send(aes.encrypt('invalid'));
     else {
+        var ciphermsg = req.body;
         ciphermsg = ciphermsg.substring(0, ciphermsg.length - 1);
 
         var plainmsg = aes.decrypt(ciphermsg);
