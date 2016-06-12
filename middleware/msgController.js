@@ -39,7 +39,10 @@ var receive = function (req, res, next) {
                     res.send(aes.encrypt(response[1]));
                 }
             }
-            else res.send(aes.encrypt(check[1]));
+            else {
+                debug('bad tmplcheck: ' + check[1]);
+                res.send(aes.encrypt(check[1]));
+            }
         }
         else {
             debug('bad decrypt: ' + plainmsg[1]);
