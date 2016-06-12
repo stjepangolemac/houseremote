@@ -7,21 +7,15 @@ var aes = require('../security/aes.js');
 var scheduler = require('../scheduler/scheduler.js');
 var tmplcheck = require('../security/tmplcheck.js');
 
-app.use(bodyParser.text());
-app.use(bodyParser.json());       // to support JSON-encoded bodies
-app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
-    extended: true
-}));
-
 var receive = function (req, res, next) {
     debug('received from ip: ' + req.ip + ', msg length: ' + req.body.length);
 
     var ciphermsg = req.body;
-    if(ciphermsg.length == (0 || undefined || null)) res.send('invalid');
+    if(ciphermsg.length == (0 || undefined || null)) res.send(aes.encrypt('invalid'));
     else {
         ciphermsg = ciphermsg.substring(0, ciphermsg.length - 1);
 
-        var plainmsg = (ciphermsg);
+        var plainmsg = aes.decrypt(ciphermsg);
 
         if (plainmsg[0]) {
             debug('decrypted message: ' + plainmsg[1]);
