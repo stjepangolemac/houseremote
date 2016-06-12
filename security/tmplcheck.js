@@ -1,7 +1,6 @@
 'use strict';
 
 var check = function (_msg) {
-    var msg = JSON.parse(_msg);
     
     switch(msg.command) {
         case 'add':

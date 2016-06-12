@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ebbaf98d-6c98-47e5-a65d-fcbcd04e6868" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/middleware/msgController.js" afterPath="$PROJECT_DIR$/middleware/msgController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/security/aes.js" afterPath="$PROJECT_DIR$/security/aes.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/security/tmplcheck.js" afterPath="$PROJECT_DIR$/security/tmplcheck.js" />
     </list>
     <ignored path="houseremote.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -77,8 +76,8 @@
       <file leaf-file-name="tmplcheck.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/security/tmplcheck.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
-              <caret line="9" column="93" selection-start-line="9" selection-start-column="93" selection-end-line="9" selection-end-column="93" />
+            <state relative-caret-position="34">
+              <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -94,12 +93,12 @@
       <list>
         <option value="$PROJECT_DIR$/middleware/msgController" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/security/tmplcheck.js" />
         <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/msgTmpl.js" />
         <option value="$PROJECT_DIR$/scheduler/scheduler.js" />
         <option value="$PROJECT_DIR$/security/aes.js" />
         <option value="$PROJECT_DIR$/middleware/msgController.js" />
+        <option value="$PROJECT_DIR$/security/tmplcheck.js" />
       </list>
     </option>
   </component>
@@ -296,12 +295,12 @@
       <option name="presentableId" value="Default" />
       <updated>1465737780245</updated>
       <workItem from="1465737782500" duration="5710000" />
-      <workItem from="1465755722012" duration="6621000" />
+      <workItem from="1465755722012" duration="6828000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12331000" />
+    <option name="totallyTimeSpent" value="12538000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -439,18 +438,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/security/tmplcheck.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="9" column="93" selection-start-line="9" selection-start-column="93" selection-end-line="9" selection-end-column="93" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/security/aes.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="61" column="77" selection-start-line="61" selection-start-column="77" selection-end-line="61" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/security/tmplcheck.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
           <folding />
         </state>
       </provider>
