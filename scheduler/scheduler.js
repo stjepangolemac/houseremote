@@ -160,7 +160,8 @@ function createDB() {
         active: false,
         enabled: false
     }
-    db.push(exampleTimer);
+    db.push(exampleTimer)
+    backupDB();
     debug('database created and loaded');
 }
 
