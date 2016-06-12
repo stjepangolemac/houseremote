@@ -115,7 +115,19 @@ function removeTimer(timer) {
         backupDB();
         return [true, 'removed timer from database'];
     }
-    else return [false, 'cannot remove'];
+    else {
+        timer.active = true;
+
+        index = db.indexOf(timer);
+        if(index == -1) return [false, 'cannot remove, timer is not in database'];
+
+        if(db.splice(index, 1) != []) {
+            backupDB();
+            return [true, 'removed timer from database'];
+        }
+
+        return [false, 'cannot remove'];
+    }
 }
 
 function toggleEnabled(timer) {

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ebbaf98d-6c98-47e5-a65d-fcbcd04e6868" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/middleware/msgController.js" afterPath="$PROJECT_DIR$/middleware/msgController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scheduler/scheduler.js" afterPath="$PROJECT_DIR$/scheduler/scheduler.js" />
     </list>
     <ignored path="houseremote.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,7 +33,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="msgController.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="msgController.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/middleware/msgController.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="324">
@@ -53,11 +53,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scheduler.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="scheduler.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scheduler/scheduler.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1042">
-              <caret line="62" column="10" selection-start-line="62" selection-start-column="4" selection-end-line="62" selection-end-column="10" />
+            <state relative-caret-position="369">
+              <caret line="119" column="0" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -95,10 +95,10 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/msgTmpl.js" />
-        <option value="$PROJECT_DIR$/scheduler/scheduler.js" />
         <option value="$PROJECT_DIR$/security/aes.js" />
         <option value="$PROJECT_DIR$/security/tmplcheck.js" />
         <option value="$PROJECT_DIR$/middleware/msgController.js" />
+        <option value="$PROJECT_DIR$/scheduler/scheduler.js" />
       </list>
     </option>
   </component>
@@ -295,12 +295,12 @@
       <option name="presentableId" value="Default" />
       <updated>1465737780245</updated>
       <workItem from="1465737782500" duration="5710000" />
-      <workItem from="1465755722012" duration="7221000" />
+      <workItem from="1465755722012" duration="8733000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12931000" />
+    <option name="totallyTimeSpent" value="14443000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -430,14 +430,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scheduler/scheduler.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1042">
-          <caret line="62" column="10" selection-start-line="62" selection-start-column="4" selection-end-line="62" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/security/tmplcheck.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -458,6 +450,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
           <caret line="34" column="51" selection-start-line="34" selection-start-column="51" selection-end-line="34" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scheduler/scheduler.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="119" column="0" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
           <folding />
         </state>
       </provider>
