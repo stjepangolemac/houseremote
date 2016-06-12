@@ -106,12 +106,12 @@ function addTimer(timer) {
 }
 
 function removeTimer(timer) {
+    debug('TIMER NAME: ' + timer.name);
     if(db == (null || undefined)) return [false, 'cannot remove, database nonexistent'];
 
     var index = db.indexOf(db.find(function (item) {
         return item.name === timer.name;
     }));
-    debug('TIMER NAME: ' + timer.name);
     if(index == -1) return [false, 'cannot remove, no such timer in db'];
 
     if(db.splice(index, 1) != []) return [true, 'timer removed from db'];
