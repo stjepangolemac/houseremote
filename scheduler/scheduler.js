@@ -144,9 +144,11 @@ function listTimers() {
 
 function triggerDevice(device) {
     // using get requests on ethernet shield instead of serial write directly on arduino
-    request('http://localhost:XXXX', function (error, response, body) {
-        if (error && response.statusCode != 200) {
+    request('http://192.168.0.244/?' + device + '=toggle', function (error, response, body) {
+        if (error || response.statusCode != 200) {
             debug('triggering device error: ' + error);
+        } else {
+            debug('triggered device: ' + device);
         }
 
     });
