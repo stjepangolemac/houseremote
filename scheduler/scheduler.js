@@ -2,6 +2,7 @@
 const debug = require('debug')('scheduler');
 const fs = require('fs');
 var SerialPort = require("serialport");
+var request = require('request');
 
 var frequency = 1000;
 var quit = false;
@@ -35,7 +36,7 @@ port.on('data', function (data) {
 });
 
 function scheduling() {
-    debug('scheduling...');
+    //debug('scheduling...');
     var time = new Date();
     currentSeconds = time.getHours() * 60 * 60 + time.getMinutes() * 60 + time.getSeconds();
 
@@ -142,16 +143,34 @@ function listTimers() {
 }
 
 function triggerDevice(device) {
-    //port.write(2 + ',' + device);
+    // using get requests on ethernet shield instead of serial write directly on arduino
+    request('http://localhost:XXXX', function (error, response, body) {
+        if (error && response.statusCode != 200) {
+            debug('triggering device error: ' + error);
+        }
+
+    });
 }
 
 function activateTimer(timer) {
-    //port.write(timer.name + ',' + timer.device + ',' + 1);
+    // using get requests on ethernet shield instead of serial write directly on arduino
+    request('http://localhost:XXXX', function (error, response, body) {
+        if (error && response.statusCode != 200) {
+            debug('triggering device error: ' + error);
+        }
+
+    });
     debug('activating timer ' + timer.name);
 }
 
 function deactivateTimer(timer) {
-    //port.write(timer.name + ',' +  timer.device + ',' + 0);
+    // using get requests on ethernet shield instead of serial write directly on arduino
+    request('http://localhost:XXXX', function (error, response, body) {
+        if (error && response.statusCode != 200) {
+            debug('triggering device error: ' + error);
+        }
+
+    });
     debug('deactivating timer ' + timer.name);
 }
 
