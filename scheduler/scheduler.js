@@ -147,8 +147,10 @@ function triggerDevice(device) {
     request('http://192.168.0.244/?' + device + '=toggle', function (error, response, body) {
         if (error || response.statusCode != 200) {
             debug('triggering device error: ' + error);
+            return [false, 'triggering device error'];
         } else {
             debug('triggered device: ' + device);
+            return [true, 'successfully triggered device'];
         }
 
     });
