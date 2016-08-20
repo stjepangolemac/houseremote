@@ -2,7 +2,7 @@
 > houseremote@1.0.0 start /home/stjepan/Development/houseremote
 > node server.js
 
-Sat, 20 Aug 2016 16:43:25 GMT encryption secret loaded successfully
-Sat, 20 Aug 2016 16:43:25 GMT scheduler database is loaded
-Sat, 20 Aug 2016 16:43:25 GMT server started listening on port 3000
-Sat, 20 Aug 2016 16:43:25 GMT scheduler error opening serial port: Error: Permission denied, cannot open /dev/ttyS9
+Sat, 20 Aug 2016 17:32:28 GMT encryption secret loaded successfully
+Sat, 20 Aug 2016 17:32:28 GMT scheduler database is loaded
+Sat, 20 Aug 2016 17:32:28 GMT server started listening on port 3000
+Sat, 20 Aug 2016 17:32:28 GMT scheduler error opening serial port: Error: Permission denied, cannot open /dev/ttyS9

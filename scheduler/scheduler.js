@@ -159,24 +159,28 @@ function triggerDevice(device) {
 
 function activateTimer(timer) {
     // using get requests on ethernet shield instead of serial write directly on arduino
-    request('http://localhost:XXXX', function (error, response, body) {
+    request('http://192.168.0.244/?' + timer.device + '=on', function (error, response, body) {
         if (error && response.statusCode != 200) {
-            debug('triggering device error: ' + error);
+            debug('activating timer error: ' + error);
+        } else {
+            debug('successfully activated timer: ' + timer.device);
         }
 
     });
-    debug('activating timer ' + timer.name);
+    return [true, 'pa jebo ga caca'];
 }
 
 function deactivateTimer(timer) {
     // using get requests on ethernet shield instead of serial write directly on arduino
-    request('http://localhost:XXXX', function (error, response, body) {
+    request('http://192.168.0.244/?' + timer.device + '=off', function (error, response, body) {
         if (error && response.statusCode != 200) {
-            debug('triggering device error: ' + error);
+            debug('deactivating timer error: ' + error);
+        } else {
+            debug('successfully deactivated timer: ' + timer.device);
         }
 
     });
-    debug('deactivating timer ' + timer.name);
+    return [true, 'pa jebo ga cacaaaa'];
 }
 
 // database management
