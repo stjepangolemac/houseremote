@@ -153,8 +153,8 @@ function triggerDevice(device) {
             debug('triggered device: ' + device);
             res = [true, 'successfully triggered device'];            
         }
-    return res;
     });
+    return res;
 }
 
 function activateTimer(timer) {
