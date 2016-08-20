@@ -154,7 +154,7 @@ function triggerDevice(device) {
             res = [true, 'successfully triggered device'];            
         }
     });
-    return res;
+    return [true, 'PA VALJA LI TO'];
 }
 
 function activateTimer(timer) {
