@@ -3,6 +3,7 @@ const debug = require('debug')('scheduler');
 const fs = require('fs');
 var SerialPort = require("serialport");
 var request = require('request');
+var Promise = require('bluebird');
 
 var frequency = 1000;
 var quit = false;
@@ -154,7 +155,7 @@ function triggerDevice(device) {
             res = [true, 'successfully triggered device'];            
         }
     });
-    return [true, 'PA VALJA LI TO'];
+    return [true, 'device triggered'];
 }
 
 function activateTimer(timer) {
@@ -167,7 +168,7 @@ function activateTimer(timer) {
         }
 
     });
-    return [true, 'pa jebo ga caca'];
+    return [true, 'timer activated'];
 }
 
 function deactivateTimer(timer) {

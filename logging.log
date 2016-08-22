@@ -2,7 +2,60 @@
 > houseremote@1.0.0 start /home/stjepan/Development/houseremote
 > node server.js
 
-Sat, 20 Aug 2016 17:32:28 GMT encryption secret loaded successfully
-Sat, 20 Aug 2016 17:32:28 GMT scheduler database is loaded
-Sat, 20 Aug 2016 17:32:28 GMT server started listening on port 3000
-Sat, 20 Aug 2016 17:32:28 GMT scheduler error opening serial port: Error: Permission denied, cannot open /dev/ttyS9
+Mon, 22 Aug 2016 13:30:03 GMT encryption secret loaded successfully
+Mon, 22 Aug 2016 13:30:03 GMT scheduler database is loaded
+Mon, 22 Aug 2016 13:30:03 GMT server started listening on port 3000
+Mon, 22 Aug 2016 13:30:03 GMT scheduler error opening serial port: Error: Permission denied, cannot open /dev/ttyS9
+Mon, 22 Aug 2016 13:30:09 GMT msgcontroller received from ip: ::ffff:192.168.100.111, msg length: 235 msg: e73f9d34e95ee45569wQ8eA463qA9K6O84lofutzCo7Kojqd8/QkdgDhaH+qiT78+wWirCTOtXYRlbCLmZ7dgzgHEhf/
+6uNYL9liorJO5eWIeCNBwtfdCEdYlLtFG+ynLlaJA6R0p3xdJXsfQKOoFoCq2S1rchIN6bjPFxEe
+j3uTNpep9GI7D/DG2Z7V6ZhD15JIIXfY/Fb8WfR9P/5YfE53mtBcdVD0hW2a/g==
+
+Mon, 22 Aug 2016 13:30:09 GMT encryption iv: 16e73f9d34e95ee455 rest: 21869wQ8eA463qA9K6O84lofutzCo7Kojqd8/QkdgDhaH+qiT78+wWirCTOtXYRlbCLmZ7dgzgHEhf/
+6uNYL9liorJO5eWIeCNBwtfdCEdYlLtFG+ynLlaJA6R0p3xdJXsfQKOoFoCq2S1rchIN6bjPFxEe
+j3uTNpep9GI7D/DG2Z7V6ZhD15JIIXfY/Fb8WfR9P/5YfE53mtBcdVD0hW2a/g==
+Mon, 22 Aug 2016 13:30:09 GMT encryption Decrypt successfull
+Mon, 22 Aug 2016 13:30:09 GMT msgcontroller decrypted message: {"command":"trigger","counter":0,"device":"1","timer":{"active":false,"device":"placeholder","enabled":false,"endTime":0,"name":"placeholder","startTime":0}}
+Mon, 22 Aug 2016 13:30:09 GMT msgcontroller command valid: device triggered
+Mon, 22 Aug 2016 13:30:35 GMT msgcontroller received from ip: ::ffff:192.168.100.111, msg length: 235 msg: a189f691dd44641felpiNVkhlJzMTaJMGB3HtHzlubaCjLwMSy+7APEuLbbCKLA1TICdLUm/8CF46VeNvyqtiQWEHjH9
+kBlMexuTlSUe3Otu5mr2R2WmWIAsRBdvAdRgwYsuISS4ECSAENE4oxXuATNsx5UlpOTOyASMMKDI
+rbnoxSpqvFy4LdElMH7RGDyjluY5T78SV7p0mXL/55WGEMk1hHenQPrtn5aahA==
+
+Mon, 22 Aug 2016 13:30:35 GMT encryption iv: 16a189f691dd44641f rest: 218elpiNVkhlJzMTaJMGB3HtHzlubaCjLwMSy+7APEuLbbCKLA1TICdLUm/8CF46VeNvyqtiQWEHjH9
+kBlMexuTlSUe3Otu5mr2R2WmWIAsRBdvAdRgwYsuISS4ECSAENE4oxXuATNsx5UlpOTOyASMMKDI
+rbnoxSpqvFy4LdElMH7RGDyjluY5T78SV7p0mXL/55WGEMk1hHenQPrtn5aahA==
+Mon, 22 Aug 2016 13:30:35 GMT encryption Decrypt successfull
+Mon, 22 Aug 2016 13:30:35 GMT msgcontroller decrypted message: {"command":"add","counter":1,"device":"","timer":{"active":true,"device":"TravnjakV1","enabled":true,"endTime":55920,"name":"","startTime":55860}}
+Mon, 22 Aug 2016 13:30:35 GMT scheduler database saved
+Mon, 22 Aug 2016 13:30:35 GMT msgcontroller command valid: added new timer in database
+Mon, 22 Aug 2016 13:30:35 GMT msgcontroller received from ip: ::ffff:192.168.100.111, msg length: 211 msg: 231917f8544273bb/HBvm+JU0dv73TUVIyGJ69euCmT2dslaNEp6pQbEv7svPw2Qz1zwHa2wU0B3iQpbkjd0jaVzs94R
+ZkoltESLwFL6tZQk5JiNe8Hoh7PkjcQ6mmq6Ceoi5ngpwco1vnz9EekJYlCvCzdgz/v9ivQ+QSL9
+Vse2ShLbl8hDeVCcCrxyu04PKdk6BU9XFyuaio//
+
+Mon, 22 Aug 2016 13:30:35 GMT encryption iv: 16231917f8544273bb rest: 194/HBvm+JU0dv73TUVIyGJ69euCmT2dslaNEp6pQbEv7svPw2Qz1zwHa2wU0B3iQpbkjd0jaVzs94R
+ZkoltESLwFL6tZQk5JiNe8Hoh7PkjcQ6mmq6Ceoi5ngpwco1vnz9EekJYlCvCzdgz/v9ivQ+QSL9
+Vse2ShLbl8hDeVCcCrxyu04PKdk6BU9XFyuaio//
+Mon, 22 Aug 2016 13:30:35 GMT encryption Decrypt successfull
+Mon, 22 Aug 2016 13:30:35 GMT msgcontroller decrypted message: {"command":"list","counter":0,"timer":{"active":false,"device":"placeholder","enabled":false,"endTime":0,"name":"placeholder","startTime":0}}
+Mon, 22 Aug 2016 13:30:35 GMT msgcontroller command valid: [{"name":"example","device":"example1","startTime":49020,"endTime":50400,"active":false,"enabled":false},{"active":false,"device":"Zid v1","enabled":false,"endTime":62280,"name":"vahags","startTime":61560},{"active":false,"device":"Zid v1","enabled":false,"endTime":62280,"name":"vahagsge","startTime":61560},{"active":false,"device":"Zid v1","enabled":false,"endTime":62280,"name":"vahagsgejwjdsdd","startTime":61560},{"active":false,"device":"Zid v1","enabled":false,"endTime":62280,"name":"vah","startTime":61560},{"active":true,"device":"TravnjakV1","enabled":true,"endTime":55920,"name":"","startTime":55860}]
+Mon, 22 Aug 2016 13:31:11 GMT msgcontroller received from ip: ::ffff:192.168.100.111, msg length: 235 msg: ff62a1753802348bXlurDE1c59MhlupuRBWfz9I3uw71X9rbQRJXhXF6lDcvKrWbHOX9N/qmozK6AHz7jjyQ+plNSreo
+X2MrAZPNQMEW/PrBmOmFYBa4GoVZxl6Z+e8KSubf++yvvyyPa4S5K/Sg1xigmmfYxVRAVB8RbmD/
+7cyT2JncLIgdG+j7s6vEaYRY9VbFh/7RHLPRvUhEV9/8doWTNXEAfko6pQx7mQ==
+
+Mon, 22 Aug 2016 13:31:11 GMT encryption iv: 16ff62a1753802348b rest: 218XlurDE1c59MhlupuRBWfz9I3uw71X9rbQRJXhXF6lDcvKrWbHOX9N/qmozK6AHz7jjyQ+plNSreo
+X2MrAZPNQMEW/PrBmOmFYBa4GoVZxl6Z+e8KSubf++yvvyyPa4S5K/Sg1xigmmfYxVRAVB8RbmD/
+7cyT2JncLIgdG+j7s6vEaYRY9VbFh/7RHLPRvUhEV9/8doWTNXEAfko6pQx7mQ==
+Mon, 22 Aug 2016 13:31:11 GMT encryption Decrypt successfull
+Mon, 22 Aug 2016 13:31:11 GMT msgcontroller decrypted message: {"command":"add","counter":1,"device":"","timer":{"active":true,"device":"TravnjakV1","enabled":true,"endTime":55980,"name":"gagah","startTime":55920}}
+Mon, 22 Aug 2016 13:31:11 GMT scheduler database saved
+Mon, 22 Aug 2016 13:31:11 GMT msgcontroller command valid: added new timer in database
+Mon, 22 Aug 2016 13:31:11 GMT msgcontroller received from ip: ::ffff:192.168.100.111, msg length: 211 msg: e7b8ae1429ae69beFkz4E3UCoqj7cm/UJtrUd/uurhpSaR5B6G78JxywEJigp0VNadRBFZMU5vmA8KQqQ5z1jbmFSph8
+3RdnPsKjyRJHJx2qx30LtrCqDoJaeGT62VGwvkNM8tccqN4hG1vJO23Ab/mtZMiB+JWU/vrqZTWU
+SQqtgLtV8+FEUr1PYysGKhoIfdC517PmNCy41uUX
+
+Mon, 22 Aug 2016 13:31:11 GMT encryption iv: 16e7b8ae1429ae69be rest: 194Fkz4E3UCoqj7cm/UJtrUd/uurhpSaR5B6G78JxywEJigp0VNadRBFZMU5vmA8KQqQ5z1jbmFSph8
+3RdnPsKjyRJHJx2qx30LtrCqDoJaeGT62VGwvkNM8tccqN4hG1vJO23Ab/mtZMiB+JWU/vrqZTWU
+SQqtgLtV8+FEUr1PYysGKhoIfdC517PmNCy41uUX
+Mon, 22 Aug 2016 13:31:11 GMT encryption Decrypt successfull
+Mon, 22 Aug 2016 13:31:11 GMT msgcontroller decrypted message: {"command":"list","counter":0,"timer":{"active":false,"device":"placeholder","enabled":false,"endTime":0,"name":"placeholder","startTime":0}}
+Mon, 22 Aug 2016 13:31:11 GMT msgcontroller command valid: [{"name":"example","device":"example1","startTime":49020,"endTime":50400,"active":false,"enabled":false},{"active":false,"device":"Zid v1","enabled":false,"endTime":62280,"name":"vahags","startTime":61560},{"active":false,"device":"Zid v1","enabled":false,"endTime":62280,"name":"vahagsge","startTime":61560},{"active":false,"device":"Zid v1","enabled":false,"endTime":62280,"name":"vahagsgejwjdsdd","startTime":61560},{"active":false,"device":"Zid v1","enabled":false,"endTime":62280,"name":"vah","startTime":61560},{"active":true,"device":"TravnjakV1","enabled":true,"endTime":55920,"name":"","startTime":55860},{"active":true,"device":"TravnjakV1","enabled":true,"endTime":55980,"name":"gagah","startTime":55920}]
+Mon, 22 Aug 2016 13:32:17 GMT scheduler triggering device error: Error: connect ETIMEDOUT 192.168.0.244:80
